@@ -1,7 +1,7 @@
 {
   "name": "ecommerce",
   "version": "0.1.0",
-  "homepage": "https://mohitverma2002.github.io/ecommerce-cantilever/",
+  "homepage": "https://mohitverma2002.github.io/CANTILEVER/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
