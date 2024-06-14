@@ -1,13 +1,12 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./pages/notFound/NotFound";
 import Details from "./pages/details/Details";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import products from "./Data";
 import Cart from "./pages/cart/Cart";
 import { CartProvider } from "./CartContext";
@@ -43,7 +42,6 @@ function App() {
   return (
     <div className="App">
       <CartProvider>
-        <BrowserRouter>
           <AuthProvider>
             <Header />
             <Routes>
@@ -82,7 +80,6 @@ function App() {
             </Routes>
             <Footer />
           </AuthProvider>
-        </BrowserRouter>
       </CartProvider>
     </div>
   );
